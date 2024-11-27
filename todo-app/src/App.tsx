@@ -9,9 +9,6 @@ const App = () => {
 	return (
 		<div className="container mx-auto max-w-md">
 			<TaskProvider>
-				<ThemeProvider>
-					<Home />
-				</ThemeProvider>
 				<div className="text-4xl font-extrabold tracking-tight lg:text-5xl text-center">
 					Todo App
 				</div>
@@ -24,6 +21,9 @@ const App = () => {
 					</Card>
 				</div>
 			</TaskProvider>
+			<ThemeProvider>
+				<Home />
+			</ThemeProvider>
 		</div>
 	);
 };
