@@ -1,5 +1,5 @@
 import ExpenseForm from "./components/ExpenseForm";
-import Form from "./components/Form";
+import ExpenseView from "./components/ExpenseView";
 import { ExpenseProvider } from "./context/ExpenseContext";
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
 		<ExpenseProvider>
 			<div className="container mx-auto max-w-sm p-3">
 				<ExpenseForm />
+				<ExpenseView />
 			</div>
 		</ExpenseProvider>
 	);

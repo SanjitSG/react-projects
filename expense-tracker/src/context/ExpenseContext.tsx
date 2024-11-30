@@ -4,7 +4,7 @@ import { createContext, useContext, useReducer } from "react";
 export interface Expense {
 	id: number;
 	title: string;
-	description: string;
+	description?: string;
 	category: string;
 	amount: number;
 }
