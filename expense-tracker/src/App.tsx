@@ -5,7 +5,7 @@ import { ExpenseProvider } from "./context/ExpenseContext";
 function App() {
 	return (
 		<ExpenseProvider>
-			<div className="container mx-auto max-w-sm p-3">
+			<div className="container mx-auto max-w-sm p-3 flex flex-row ">
 				<ExpenseForm />
 				<ExpenseView />
 			</div>

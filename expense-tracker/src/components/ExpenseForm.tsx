@@ -34,7 +34,7 @@ export default function ExpenseForm() {
 	}
 
 	return (
-		<div className="max-w-80 border border-black p-4 rounded-lg shadow ">
+		<div className="max-w-96 border border-black p-4 rounded-lg shadow flex-shrink-0 ">
 			<Form {...form}>
 				<form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
 					<FormField
