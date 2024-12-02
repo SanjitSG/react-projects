@@ -1,16 +1,14 @@
-import ExpenseForm from "./components/ExpenseForm";
-import ExpenseView from "./components/ExpenseView";
-import { ExpenseProvider } from "./context/ExpenseContext";
+import Toolbar from "./components/Toolbar";
 
-function App() {
+const App = () => {
 	return (
-		<ExpenseProvider>
-			<div className="container mx-auto max-w-sm p-3 flex flex-row ">
-				<ExpenseForm />
-				<ExpenseView />
-			</div>
-		</ExpenseProvider>
+		<div className="container max-w-screen-sm w-full mx-auto p-4 h-screen">
+			<Toolbar
+				onPlayMovie={() => alert("Playing")}
+				onUploadVideo={() => alert("Uploading")}
+			/>
+		</div>
 	);
-}
+};
 
 export default App;
