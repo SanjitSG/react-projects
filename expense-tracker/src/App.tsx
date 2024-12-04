@@ -1,4 +1,5 @@
 import DateComponent from "./components/DateComponent";
+import Gallery from "./components/Gallery";
 import Toolbar from "./components/Toolbar";
 
 const App = () => {
@@ -8,7 +9,8 @@ const App = () => {
 				onPlayMovie={() => alert("Playing")}
 				onUploadVideo={() => alert("Uploading")}
 			/>
-			<DateComponent />
+			{/* <DateComponent /> */}
+			<Gallery />
 		</div>
 	);
 };
